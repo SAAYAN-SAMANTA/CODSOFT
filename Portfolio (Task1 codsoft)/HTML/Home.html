@@ -1,58 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <!-- fonts links -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Home.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
         <div class="name">
-          <h1>Saayan Samanta</h1>
+            <h1>Saayan Samanta</h1>
         </div>
         <div class="navbar">
-          <button type="button" class="navbutton">About</button>
-          <button type="button" class="navbutton">Skills</button>
-          <button type="button" class="navbutton">Projects</button>
-          <button type="button" class="navbutton">Resume</button>
-          <button type="button" class="navbutton">Contact</button>
+            <button type="button" class="navbutton">
+                <a href="#about" class="link">About</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#skills" class="link">Skill</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#projects" class="link">Project</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#resume" class="link">Resume</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#contact" class="link">Contact</a>
+            </button>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
-        <img src="/Assets/myphoto1.jpg" alt="Profile Image">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <div class="abouttext" onload=typeWriter()>
+            <h2>
+                Hi, I'm <b id="demo" class="typing"></b>
+            </h2>
+            <p>
+                As a web developer, I have an experience of <b class="highlight">4 years</b>. I specialize in creating
+                dynamic and user-friendly
+                websites. I am proficient in <b class="highlight">HTML</b>, <b class="highlight">CSS</b>, <b
+                    class="highlight">JavaScript</b>, and have extensive experience with frameworks such as <b
+                    class="highlight">React</b> and <b class="highlight">Angular</b>, as well as back-end technologies
+                like <b class="highlight">Node.js</b> , <b class="highlight">Springboot</b> and <b
+                    class="highlight">SQL</b>. My portfolio includes a range of projects from small sites to complex web
+                applications. I am known for my strong problem-solving skills and my ability to work closely with
+                cross-functional teams to ensure that all aspects of the website align with client needs and industry
+                standards. Committed to both innovation and technologies in web development to provide optimal
+                solutions.
+            </p>
+        </div>
+
+        <div class="profileimagegridbox">
+            <div class="imagebg">
+                <img src="/Assets/myphoto1.jpg" alt="Profile Image" class="profile">
+            </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>UI/UX Design</li>
-        </ul>
+        <h2 class="skillhead"><u class="underline">&emsp;Skills and Expertice&emsp;</u></h2>
+        <div class="skillbox">
+            <ul class="listing">
+                <li class="listcontent">
+                    <div class="listtitle">
+                        HTML and CSS
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="bar">
+                        <div class="fillbar1">90%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        JavaScript
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar2">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        React
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar3">80%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Angular
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar9">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        UX / UI Design
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar4">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Java
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar5">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Node.js
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar6">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        SpringBoot
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar7">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        SQL
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar8">80%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="project1-image.jpg" alt="Project 1 Image">
-            <h3>Project 1: Website Redesign</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <br>
+        <hr>
+        <br>
+        <h2><u class="underline">&emsp;Projects and work samples&emsp;</u></h2>
+        <div class="projectbox">
+            <div class="project">
+                <img class="projectimage1" src="/Assets/Online-quiz-system.png" alt="Online Quiz System Image">
+                <h3 class="projecttitle">Online Quiz Management System</h3>
+                <div class="description">
+                    <p>An online system to manage quiz. Where a user with faculty role can add question and generate
+                        quiz and then the user with role can give test for quiz generated by the faculty and see his/her
+                        performance. There is users with admin role who can delete or add any user to the online system.
+                    </p>
+                </div>
+                <a href="./OnlineQuiz.html">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
+
+            <div class="project">
+                <img class="projectimage2" src="/Assets/slot machine.jpg" alt="Slot Machine Image">
+                <h3 class="projecttitle">Slot Machine Game</h3>
+                <div class="description">
+                    <p>
+                        A website that displays an interactive and vertual slot machine, which acts like a real one having screen scroll and whenever the three screen displays the same element then there is a jackpot. And when does not matches it show Not Matched.
+                    </p>
+                </div>
+                <a href="">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
+
+            <div class="project">
+                <img class="projectimage1" src="/Assets/todo.jpg" alt="Todo list Image">
+                <h3 class="projecttitle">ToDo List Website</h3>
+                <div class="description">
+                    <p>
+                        A website that displays an interactive and vertual todo list page, where there is an area to write the todo items and an add button to add the item to the list. After that every item gets added with a delete icon to delete the item from the list.
+                    </p>
+                </div>
+                <a href="">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
         </div>
-        <div class="project">
-            <img src="project2-image.jpg" alt="Project 2 Image">
-            <h3>Project 2: Mobile App Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </div>
+        <hr>
     </section>
 
     <!-- Resume Section -->
@@ -82,4 +272,6 @@
     </footer>
 
 </body>
+<script src="/Javascript/Home.js"></script>
+
 </html>
