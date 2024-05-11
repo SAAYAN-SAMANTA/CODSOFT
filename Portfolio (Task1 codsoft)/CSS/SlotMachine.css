@@ -1,0 +1,104 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background: linear-gradient(to left, plum, white);
+}
+
+.navbar {
+     z-index: 1;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin: 10px;
+     background-color: purple;
+     position: fixed;
+     width: 97vw;
+     height: 10%;
+     border-radius: 30px;
+     box-shadow: 0 5px 8px 2px gray;
+}
+
+.title {
+     font-weight: bold;
+     font-size: larger;
+     font-family: "Josefin Sans", sans-serif;
+     color: white;
+}
+
+.backarrowbg {
+     background-color: white;
+     background-clip: content-box;
+     border-radius: 50%;
+}
+
+.backarrowbg:active {
+     background-color: plum;
+     position: relative;
+     top: 0.2vh;
+}
+
+.contentdocument {
+     margin: 0 2vw;
+     display: grid;
+     grid-template-columns: 55% 40%;
+     column-gap: 20px;
+     margin-top: 12vh;
+}
+
+.desimg {
+     transform: rotateZ(2deg);
+     border: 3px solid white;
+     width: 100%;
+     border-radius: 50px;
+     box-shadow: 10px 10px 10px 5px blueviolet;
+}
+
+.textbox {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform: rotateZ(-2deg);
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.description {
+     padding: 10px;
+     font-family: "Caveat", cursive;
+     font-size: 2vw;
+     height: 80%;
+     width: 80%;
+     background-color: white;
+     border-radius: 20px;
+     border: 3px solid darkorchid;
+}
+
+
+@media screen and (max-width: 500px) {
+     .textbox{
+          margin-top: 3vh;
+          width: 70%;
+     }
+
+     .contentdocument {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .desimgbox{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .desimg{
+          width: 80%;
+     }
+}

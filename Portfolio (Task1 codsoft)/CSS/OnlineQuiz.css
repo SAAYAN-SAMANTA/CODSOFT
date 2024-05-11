@@ -18,6 +18,18 @@ body{
      align-items: center;
 }
 
+.arrowbg{
+     background-color: purple;
+     background-clip: content-box;
+     border-radius: 50%;
+}
+
+.arrowbg:active {
+     background-color: plum;
+     position: relative;
+     top: 0.2vh;
+}
+
 .backarrow{
      cursor: pointer;
 }
@@ -65,4 +77,33 @@ body{
      width: 90%;
      height: 80%;
      border: 5px solid green;
+}
+
+.adjust{
+     padding: none;
+     height: 85%;
+}
+
+.adjustspimg{
+     width: 60%;
+}
+
+
+@media screen and (max-width: 500px) {
+     .descriptionL{
+          margin-bottom: 3vh;
+          width: 70%;
+     }
+
+     .explain{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .text{
+          height: 50%;
+          border: 3px solid green;
+     }
 }

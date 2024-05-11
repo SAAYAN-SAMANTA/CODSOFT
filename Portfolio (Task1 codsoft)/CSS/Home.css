@@ -29,6 +29,48 @@ header h1 {
      margin-right: 3vw;
 }
 
+.navbarphone{
+     margin-right: 3vw;
+}
+
+.menubutton{
+     cursor: pointer;
+     border: none;
+}
+
+.hide{
+     visibility: hidden;
+}
+
+.menuicon{
+     width: 7vw;
+}
+
+.dropdowncontent{
+     box-shadow: 0 10px 10px 5px gray;
+     padding: 10px;
+     background-color: beige;
+     font-size: 4vw;
+     position: absolute;
+     right: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+.dpnav{
+     padding: 5px;
+}
+
+.dpnav:hover{
+     background-color: white;
+     color: green;
+}
+
+.dpnav:active{
+     background-color: gainsboro;
+     color: purple;
+}
+
 .navbutton {
      font-size: small;
      border: none;
@@ -68,7 +110,7 @@ header h1 {
      align-items: center;
      border-radius: 50%;
      width: 21vw;
-     height: 95vh;
+     height: 50vw;
      -webkit-animation: rotate 5s infinite ease-in;
      -moz-animation: rotate 5s infinite ease-in;
      animation: rotate 5s infinite ease-in;
@@ -330,11 +372,12 @@ header h1 {
 
 .projectimage1{
      border-radius: 20px;
-     height: 35%;
+     height: 18vw;
 }
 
 .projectimage2{
      border-radius: 20px;
+     height: 21vw;
 }
 
 .projecttitle{
@@ -362,4 +405,41 @@ header h1 {
      border: 2px double white;
      background-color: purple;
      color: white;
+}
+
+
+@media screen and (max-width: 650px) {
+     .projectbox{
+          grid-template-columns: 99%;
+          row-gap: 5vh;
+     }
+
+     #about{
+          grid-template-columns: 99%;
+     }
+
+     .listcontent{
+          flex-direction: column;
+     }
+
+     .typing{
+          font-size: 5vw;
+     }
+
+     .navbar{
+          visibility: hidden;
+          position: absolute;
+     }
+
+     header h1{
+          font-size: 5vw;
+     }
+
+}
+
+@media screen and (min-width: 650px) {
+     .navbarphone{
+          visibility: hidden;
+          position: absolute;
+     }
 }
