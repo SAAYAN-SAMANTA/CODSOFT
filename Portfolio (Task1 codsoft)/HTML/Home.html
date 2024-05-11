@@ -41,6 +41,19 @@
                 <a href="#contact" class="link">Contact</a>
             </button>
         </div>
+        <div class="navbarphone" >
+            <button type="button" id="navbtn" class="menubutton" onclick={changepic()} >
+                <img src="/Assets/menuicon.png" alt="menuicon" class="menuicon" >
+            </button>
+
+            <div id="navbtncontent" class="dropdowncontent hide">
+                <a href="#about" class="link dpnav" onclick={managepopup()} >About</a>
+                <a href="#skills" class="link dpnav"onclick={managepopup()} >Skill</a>
+                <a href="#projects" class="link dpnav" onclick={managepopup()} >Project</a>
+                <a href="#resume" class="link dpnav" onclick={managepopup()} >Resume</a>
+                <a href="#contact" class="link dpnav" onclick={managepopup()} >Contact</a>
+            </div>
+        </div>
     </header>
 
     <!-- About Section -->
@@ -79,9 +92,6 @@
                     <div class="listtitle">
                         HTML and CSS
                     </div>
-
-                    <br>
-                    <br>
 
                     <div class="bar">
                         <div class="fillbar1">90%</div>
@@ -224,7 +234,7 @@
                         A website that displays an interactive and vertual slot machine, which acts like a real one having screen scroll and whenever the three screen displays the same element then there is a jackpot. And when does not matches it show Not Matched.
                     </p>
                 </div>
-                <a href="">
+                <a href="./SlotMachine.html">
                     <button type="button" class="readmore">Read More</button>
                 </a>
             </div>
@@ -237,7 +247,7 @@
                         A website that displays an interactive and vertual todo list page, where there is an area to write the todo items and an add button to add the item to the list. After that every item gets added with a delete icon to delete the item from the list.
                     </p>
                 </div>
-                <a href="">
+                <a href="./ToDo.html">
                     <button type="button" class="readmore">Read More</button>
                 </a>
             </div>
@@ -273,5 +283,5 @@
 
 </body>
 <script src="/Javascript/Home.js"></script>
-
+<script src="/Javascript/Homephone.js"></script>
 </html>
