@@ -58,17 +58,24 @@ header h1 {
 }
 
 .dpnav{
+     margin: 2px 0;
+     border-top: 1px solid gray;
+     border-left: 2px solid gray;
      padding: 5px;
+     background: linear-gradient(to left, gainsboro, white);
 }
 
 .dpnav:hover{
+     border-radius: 5px;
      background-color: white;
      color: green;
+     background: linear-gradient(to right, gainsboro, white);
 }
 
 .dpnav:active{
      background-color: gainsboro;
      color: purple;
+     background: linear-gradient(to right, gray, white);
 }
 
 .navbutton {
@@ -407,6 +414,137 @@ header h1 {
      color: white;
 }
 
+#resume{
+     margin-top: 20px;
+}
+
+#resume h2{
+     color: purple;
+     display: flex;
+     justify-content: center;
+}
+
+.resumecontent{
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 70% 25%;
+}
+
+.resumepic{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+}
+
+.resumephoto{
+     border: 1px solid black;
+     box-shadow: 0 10px 10px 5px gray;
+     height: 50vw;
+}
+
+.resumelink{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#contact h2{
+     margin-top: 40px;
+     color: purple;
+     display: flex;
+     justify-content: center;
+}
+
+.contactbody{
+     display: grid;
+     grid-template-columns: 60% 35%;
+     row-gap: 5vh;
+}
+
+.contacttext{
+     font-size: 1.7vw;
+     margin-left: 20vw;
+     font-family: "Kalam", cursive;
+     display: flex;
+     align-items: center;
+}
+
+.contactlines{
+     margin: 0 5vw;
+     font-family: "Josefin Sans", sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.contactcall{
+     width: 4vw;
+}
+
+#footer{
+     padding: 10px;
+     background-color: #1e272e;
+}
+
+.ftitle{
+     display: flex;
+     align-items: center;
+     height: 10vh;
+     font-family: "Monoton", sans-serif;
+     color: white;
+}
+
+.ftitle hr{
+     background-color: white;
+}
+
+.fbody{
+     display: grid;
+     grid-template-columns: 50% 49%;
+     row-gap: 2vh;
+}
+
+.fquote{
+     width: 100%;
+     grid-column: 1/span 2;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Poetsen One", sans-serif;
+}
+
+.fquote div{
+     width: 90%;
+}
+
+.fcontact{
+     margin-top: 2vh;
+     margin-left: 2vw;
+     display: flex;
+     align-items: flex-start;
+}
+
+.flinks{
+     margin-top: 2vh;
+     margin-left: 2vw;
+     display: flex;
+     align-items: flex-start;
+}
+
+.fcicon{
+     width: 30px;
+}
+
+.footer{
+     display: flex;
+     align-items: center;
+     height: 10vh;
+     grid-column: 1/span 2;
+     color: white;
+}
 
 @media screen and (max-width: 650px) {
      .projectbox{
@@ -435,6 +573,20 @@ header h1 {
           font-size: 5vw;
      }
 
+     .resumecontent{
+          grid-template-columns: 99%;
+          row-gap: 5vh;
+     }
+
+     .resumephoto{
+          width: 50vw;
+          height: auto;
+     }
+
+     .contactbtn{
+          width: 16vw;
+          font-size: 2.5vw;
+     }
 }
 
 @media screen and (min-width: 650px) {

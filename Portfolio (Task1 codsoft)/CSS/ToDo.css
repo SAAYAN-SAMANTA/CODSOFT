@@ -4,11 +4,13 @@
 }
 
 header{
+     z-index: 1;
+     position: fixed;
      background-color: greenyellow;
      display: flex;
      justify-content: space-around;
      align-items: center;
-     padding: 10px;
+     width: 100vw;
 }
 
 .linkback{
@@ -37,7 +39,23 @@ header{
 }
 
 .description{
+     display: flex;
+     justify-content: center;
+     align-items: center;
      width: 100%;
+}
+
+.contenttext{
+     font-size: 2vw;
+     padding: 10px;
+     font-family: "Caveat", cursive;
+     transform: rotateZ(5deg);
+     border: 3px solid orange;
+     border-radius: 20px;
+     height: 80%;
+     width: 80%;
+     background-color: wheat;
+     box-shadow: 10px 10px 10px 5px gray;
 }
 
 .imagebox{
@@ -47,4 +65,32 @@ header{
 .desimg{
      width: 100%;
      border-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+
+     .content{
+          grid-template-columns: 99%;
+     }
+
+     .description{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .contenttext{
+          width: 50%;
+     }
+
+     .imagebox{
+          margin-top: 7vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .desimg{
+          width: 90%;
+     }
 }
