@@ -11,7 +11,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,17 +47,17 @@
                 <a href="#contact" class="link">Contact</a>
             </button>
         </div>
-        <div class="navbarphone" >
-            <button type="button" id="navbtn" class="menubutton" onclick={changepic()} >
-                <img src="/Assets/menuicon.png" alt="menuicon" class="menuicon" >
+        <div class="navbarphone">
+            <button type="button" id="navbtn" class="menubutton" onclick={changepic()}>
+                <img src="/Assets/menuicon.png" alt="menuicon" class="menuicon">
             </button>
 
             <div id="navbtncontent" class="dropdowncontent hide">
-                <a href="#about" class="link dpnav" onclick={managepopup()} >About</a>
-                <a href="#skills" class="link dpnav"onclick={managepopup()} >Skill</a>
-                <a href="#projects" class="link dpnav" onclick={managepopup()} >Project</a>
-                <a href="#resume" class="link dpnav" onclick={managepopup()} >Resume</a>
-                <a href="#contact" class="link dpnav" onclick={managepopup()} >Contact</a>
+                <a href="#about" class="link dpnav" onclick={managepopup()}>About</a>
+                <a href="#skills" class="link dpnav" onclick={managepopup()}>Skill</a>
+                <a href="#projects" class="link dpnav" onclick={managepopup()}>Project</a>
+                <a href="#resume" class="link dpnav" onclick={managepopup()}>Resume</a>
+                <a href="#contact" class="link dpnav" onclick={managepopup()}>Contact</a>
             </div>
         </div>
     </header>
@@ -231,7 +237,9 @@
                 <h3 class="projecttitle">Slot Machine Game</h3>
                 <div class="description">
                     <p>
-                        A website that displays an interactive and vertual slot machine, which acts like a real one having screen scroll and whenever the three screen displays the same element then there is a jackpot. And when does not matches it show Not Matched.
+                        A website that displays an interactive and vertual slot machine, which acts like a real one
+                        having screen scroll and whenever the three screen displays the same element then there is a
+                        jackpot. And when does not matches it show Not Matched.
                     </p>
                 </div>
                 <a href="./SlotMachine.html">
@@ -244,7 +252,9 @@
                 <h3 class="projecttitle">ToDo List Website</h3>
                 <div class="description">
                     <p>
-                        A website that displays an interactive and vertual todo list page, where there is an area to write the todo items and an add button to add the item to the list. After that every item gets added with a delete icon to delete the item from the list.
+                        A website that displays an interactive and vertual todo list page, where there is an area to
+                        write the todo items and an add button to add the item to the list. After that every item gets
+                        added with a delete icon to delete the item from the list.
                     </p>
                 </div>
                 <a href="./ToDo.html">
@@ -257,31 +267,92 @@
 
     <!-- Resume Section -->
     <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download Resume (PDF)</a>
+        <h2><u class="underline">&emsp;Resume&emsp;</u></h2>
+        <div class="resumecontent">
+            <div class="resumepic">
+                <img src="/Assets/Resumepic.png" alt="Resume" class="resumephoto">
+            </div>
+            <div class="resumelink">
+                <a href="/Assets/SaayanSamanta_InternshalaResume.pdf" download>
+                    <button type="button" class="readmore">Download Resume</button>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <a href="mailto:johndoe@example.com">johndoe@example.com</a>
-            <br>
-            <a href="tel:+1234567890">+1 234 567 890</a>
+        <h2><u class="underline">&emsp;Contact&emsp;</u></h2>
+        <br>
+        <p class="contactlines">
+            I’d love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free
+            to reach out.
         </p>
+        <br>
+        <div class="contactbody">
+            <div class="contacttext">
+                <img src="/Assets/call.png" alt="phone" class="contactcall">
+                &emsp;
+                <h4>+91 6202586328</h4>
+            </div>
+            <div class="contactlink">
+                <a href="tel:+91 6202586328"><button type="button" class="readmore contactbtn">Call Me</button></a>
+            </div>
+            <div class="contacttext">
+                <img src="/Assets/gmail.png" alt="phone" class="contactcall">
+                &emsp;
+                <h4>saayansamanta2003@gmail.com</h4>
+            </div>
+            <div class="contactlink">
+                <a href="mailto:saayansamanta2003@gmail.com"><button type="button" class="readmore contactbtn">Mail
+                        Me</button></a>
+            </div>
+        </div>
+        <br>
     </section>
+    <br>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 John Doe. All rights reserved.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/johndoe/">LinkedIn</a>
-            <br>
-            <a href="https://github.com/johndoe">GitHub</a>
-        </p>
+    <footer id="footer">
+        <div class="ftitle">
+            &emsp;&emsp;&emsp;Saayan Samanta
+        </div>
+        <hr>
+        <br>
+        <div class="fbody">
+            <div class="fquote">
+                <div>
+                    I'm a passionate Fullstack Developer, dedicated to creating innovative and efficient solutions.
+                    Let's
+                    connect and collaborate!
+                </div>
+            </div>
+            <div class="fcontact">
+                <a href="tel:+91 6202586328">
+                    <img src="/Assets/call.png" alt="phone" class="fcicon">
+                </a>
+                &emsp;
+                <a href="mailto:saayansamanta2003@gmail.com">
+                    <img src="/Assets/gmail.png" alt="phone" class="fcicon">
+                </a>
+            </div>
+            <div class="flinks">
+                <a href="https://github.com/SAAYAN-SAMANTA" target="_blank">
+                    <img src="/Assets/github bg.png" alt="links" class="icon">
+                </a>
+                &emsp;
+                <a href="https://www.linkedin.com/in/saayan-samanta-103788261/" target="_blank">
+                    <img src="/Assets/linkedin.png" alt="links" class="icon">
+                </a>
+            </div>
+            <div class="footer">
+                &emsp;&copy; 2024 Saayan Samanta. All rights reserved.
+            </div>
+        </div>
     </footer>
 
 </body>
 <script src="/Javascript/Home.js"></script>
 <script src="/Javascript/Homephone.js"></script>
+
 </html>
