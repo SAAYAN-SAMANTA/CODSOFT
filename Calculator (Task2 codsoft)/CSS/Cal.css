@@ -1,0 +1,107 @@
+body{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #1B1464;
+}
+
+.calculator{
+     padding: 20px;
+     display: grid;
+     grid-template-columns: 12vw 12vw 12vw 11vw;
+     grid-template-rows: 20vh;
+     column-gap: 10px;
+     row-gap: 10px;
+     border-left: 4px solid white;
+     border-bottom: 2px solid white;
+     border-radius: 20px;
+     width: 50vw;
+     height: 80vh;
+     background-color: #2f3542;
+     box-shadow: -10px 10px 30px 5px cyan;
+}
+
+.displayspace{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     grid-column: 1/span 4;
+}
+
+.display{
+     border-top: 2px solid gray;
+     border-left: 2px solid gray;
+     font-family: "Black Ops One", system-ui;
+     font-size: 5vw;
+     border-radius: 10px;
+     width: 85%;
+     height: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 10px;
+     background-color:black;
+     color: white;
+}
+
+.numkey{
+     font-family: "Poetsen One", sans-serif;
+     font-size: 4vw;
+     border-radius: 20px;
+     cursor: pointer;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-right: 2px solid gray;
+     border-bottom: 2px solid gray;
+}
+
+.numkey:active{
+     color: white;
+     background-color: gray;
+     border: none;
+}
+
+@media screen and (max-width: 850px) {
+     .calculator{
+          grid-template-columns: 11.5vw 12vw 12vw 11vw;
+     }
+}
+
+@media screen and (max-width: 800px) {
+     .calculator{
+          grid-template-columns: 11vw 12vw 12vw 11vw;
+     }
+}
+
+@media screen and (max-width: 650px) {
+     .calculator{
+          grid-template-columns: 11vw 11vw 11vw 12vw;
+     }
+}
+
+@media screen and (max-width: 500px) {
+     .calculator{
+          grid-template-columns: 11vw 11vw 11vw 11vw;
+     }
+}
+
+@media screen and (max-width: 400px) {
+     .calculator{
+          grid-template-columns: 11vw 11vw 11vw 10vw;
+     }
+}
+
+@media screen and (max-width: 300px) {
+     .calculator{
+          grid-template-columns: 10vw 10vw 10vw 10vw;
+     }
+}
+
+@media screen and (max-width: 300px) {
+     .calculator{
+          grid-template-columns: 8vw 9vw 9vw 9vw;
+     }
+}
