@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.adjustcontainer {
+    margin: 0;
+    padding: 0;
+}
+
+.adjustrow {
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+}
+
+.websitelogo {
+    width: 10vw;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box {
+    margin-top: 5vh;
+}
+
+.linkbutton {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-right: 5vw;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px 3px lightblue;
+    border-radius: 10px;
+}
+
+.linkbutton:hover {
+    border: none;
+    animation: shadow 0.6s forwards 1;
+    box-shadow: 0 10px 5px 3px #5f27cd;
+}
+
+@keyframes shadow {
+    0% {
+        border-radius: 10px;
+        box-shadow: 0 0 5px 3px lightblue;
+    }
+
+    100% {
+        border-radius: 20px;
+        box-shadow: 0 10px 5px 3px #5f27cd;
+    }
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    width: 100%;
+}
+
+.textcontainer {
+    background-color: white;
+    width: 85%;
+    height: 80%;
+}
+
+.title {
+    background: linear-gradient(to right, #be2edd, #5f27cd);
+    font-size: 2.3vw;
+    background-clip: text;
+    font-weight: bold;
+    color: transparent;
+}
+
+#animated{
+    margin-top: 2vh;
+}
+
+.animatedbarseen {
+    background-color: lightblue;
+    box-shadow: 5px 2px 5px 3px gray;
+    height: 1.4vw;
+    border-radius: 20px;
+    animation: animateball 5s forwards 1;
+}
+
+@keyframes animateball {
+    0%{
+        background-color: #5f27cd;
+        translate: 0%;
+        width: 0%;
+    }
+
+    30%{
+        background-color: #5f27cd;
+        translate: 100%;
+        width: 100%;
+    }
+
+    60%{
+        background: linear-gradient(to left, #5f27cd, red);
+    }
+
+    70%{
+        background: black;
+        width: 10%;
+    }
+
+    100%{
+        width: 100%;
+    }
+
+}
+
+.animatedbarhidden {
+    border-radius: 20px;
+    background-color: red;
+    height: 1.4vw;
+    width: 0%;
+    animation: animatesquare 2s forwards 1;
+}
+
+@keyframes animatesquare {
+    0%{
+        translate: 0%;
+        width: 10%;
+    }
+
+    30%{
+        translate: -100%;
+        width: 10%;
+    }
+
+    70%{
+        translate: -10%;
+        width: 10%;
+    }
+
+    100%{
+        width: 0%;
+    }
+
+}
+
+.adjustanimatedrow {
+    margin: 0;
+    padding: 0;
+}
+
+.paracontent{
+    margin-top: 6vh;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 85%;
+}
+
+.skillsbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    height: 98%;
+    width: 100%;
+    background: linear-gradient(to left, #be2edd, #5f27cd);
+}
+
+.skillbox{
+    color: white;
+    height: 75%;
+    width: 75%;
+}
+
+.skillcontent{
+    font-size: 0.9vw;
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+}
+
+.skillcontenttitle{
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.skillbarsbox{
+    width: 100%;
+    height: 93%;
+}
+
+.skilltable{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    row-gap: 13%;
+    column-gap: 3%;
+}
+
+.skillbar{
+    display: flex;
+    align-items: center;
+}
+
+.skills{
+    border-radius: 20px;
+    background-color: gray;
+    height: 50%;
+    width: 90%;
+}
+
+.bars95{
+    border-radius: 20px;
+    background-color: white;
+    height: 100%;
+    width: 95%;
+    animation: expand95 forwards 2s 1;
+}
+
+@keyframes expand95 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 95%;
+    }
+}
+
+.bars90{
+    border-radius: 20px;
+    background-color: white;
+    height: 100%;
+    width: 90%;
+    animation: expand90 forwards 2s 1;
+}
+
+@keyframes expand90 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+.bars80{
+    border-radius: 20px;
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    animation: expand80 forwards 2s 1;
+}
+
+@keyframes expand80 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
