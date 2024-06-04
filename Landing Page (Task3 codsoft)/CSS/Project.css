@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.adjustcontainer {
+    margin: 0;
+    padding: 0;
+}
+
+.adjustrow {
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+}
+
+.adjustcardrow {
+    margin: 0;
+    padding: 0;
+}
+
+.websitelogo {
+    width: 10vw;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box {
+    margin-top: 5vh;
+}
+
+.linkbutton {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-right: 5vw;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px 3px lightblue;
+    border-radius: 10px;
+}
+
+.linkbutton:hover {
+    border: none;
+    animation: shadow 0.6s forwards 1;
+    box-shadow: 0 10px 5px 3px #5f27cd;
+}
+
+@keyframes shadow {
+    0% {
+        border-radius: 10px;
+        box-shadow: 0 0 5px 3px lightblue;
+    }
+
+    100% {
+        border-radius: 20px;
+        box-shadow: 0 10px 5px 3px #5f27cd;
+    }
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+    width: 100%;
+}
+
+.projectad {
+    box-shadow: 5px 10px 10px 5px gray;
+    border-radius: 20px;
+    width: 85%;
+    height: 75%;
+}
+
+.heading {
+    position: relative;
+    margin-left: 5%;
+    background: linear-gradient(to right, #be2edd, #5f27cd);
+    font-size: 2.3vw;
+    background-clip: text;
+    font-weight: bold;
+    color: transparent;
+}
+
+.hiddenrow {
+    position: absolute;
+    top: 0;
+    background: none;
+    width: 100%;
+    height: 100%;
+    animation: shine 2s forwards 1;
+}
+
+@keyframes shine {
+    0% {
+        background: linear-gradient(to left, transparent, white, transparent);
+        width: 25%;
+    }
+
+    30% {
+        background: linear-gradient(to left, transparent, white, transparent);
+        width: 50%;
+    }
+
+    50% {
+        background: linear-gradient(to left, transparent, white, transparent);
+        width: 75%;
+    }
+
+    80% {
+        background: linear-gradient(to left, transparent, white, transparent);
+        width: 100%;
+    }
+
+    100% {
+        background: none;
+    }
+}
+
+.hrcontainer {
+    position: relative;
+}
+
+.hrstyle {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    border: 0.6vw solid #be2edd;
+    border-radius: 20px;
+    width: 20%;
+    animation: animate 2s forwards 1;
+}
+
+@keyframes animate {
+    0% {
+        width: 1%;
+        border: 0.6vw dotted red;
+        border-radius: none;
+    }
+
+    25% {
+        width: 10%;
+    }
+
+    50% {
+        border: 0.6vw dotted blue;
+        width: 20%;
+    }
+
+    60% {
+        left: 10%;
+    }
+
+    100% {
+        left: 5%;
+        border: 0.6vw solid #be2edd;
+        border-radius: 20px;
+        width: 20%;
+    }
+}
+
+.imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    border-radius: 40%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 95%;
+    height: 23vh;
+}
+
+.cardtitle {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.cardparabox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+    padding: 4%;
+    font-size: 1vw;
+    width: 90%;
+    height: 90%;
+    border-top: 5px solid gainsboro;
+}
+
+.buttonbox {
+    position: relative;
+    margin-top: 5%;
+}
+
+.readmorebtn {
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: white;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #5f27cd, #be2edd);
+}
+
+.slidinganimatedbox {
+    transform: skewX(30deg);
+    width: 13%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    animation: cardslide 1.5s forwards infinite;
+}
+
+@keyframes cardslide {
+    0% {
+        background-color: rgba(255, 255, 255, 0.438);
+        left: 10%;
+    }
+
+    10%{
+        left: 15%;
+    }
+
+    15%{
+        left: 20%;
+    }
+
+    25%{
+        left: 25%;
+    }
+
+    35%{
+        left: 30%;
+    }
+
+    45%{
+        left: 35%;
+    }
+
+    55%{
+        left: 45%;
+    }
+
+    65%{
+        left: 55%;
+    }
+
+    75%{
+        left: 65%; 
+    }
+
+    100%{
+        left: 70%;
+        background-color: rgba(255, 255, 255, 0.438);
+        transform: translateX(100%) skewX(30deg);;
+    }
+}
