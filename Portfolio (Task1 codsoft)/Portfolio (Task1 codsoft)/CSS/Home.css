@@ -1,0 +1,598 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+header {
+     height: 7vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0.5vw;
+     background-color: whitesmoke;
+}
+
+header h1 {
+     color: transparent;
+     background: none;
+     margin-left: 3vw;
+     font-family: "Satisfy", cursive;
+}
+
+.name {
+     display: flex;
+     background: linear-gradient(to left, blue, orange);
+     background-clip: text;
+}
+
+.navbar {
+     margin-right: 3vw;
+}
+
+.navbarphone{
+     margin-right: 3vw;
+}
+
+.menubutton{
+     cursor: pointer;
+     border: none;
+}
+
+.hide{
+     visibility: hidden;
+}
+
+.menuicon{
+     width: 7vw;
+}
+
+.dropdowncontent{
+     box-shadow: 0 10px 10px 5px gray;
+     padding: 10px;
+     background-color: beige;
+     font-size: 4vw;
+     position: absolute;
+     right: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+.dpnav{
+     margin: 2px 0;
+     border-top: 1px solid gray;
+     border-left: 2px solid gray;
+     padding: 5px;
+     background: linear-gradient(to left, gainsboro, white);
+}
+
+.dpnav:hover{
+     border-radius: 5px;
+     background-color: white;
+     color: green;
+     background: linear-gradient(to right, gainsboro, white);
+}
+
+.dpnav:active{
+     background-color: gainsboro;
+     color: purple;
+     background: linear-gradient(to right, gray, white);
+}
+
+.navbutton {
+     font-size: small;
+     border: none;
+     cursor: pointer;
+     background-color: transparent;
+     font-weight: bold;
+     padding: 10px;
+}
+
+.link {
+     text-decoration: none;
+     color: darkblue;
+}
+
+.profile {
+     border-radius: 50%;
+     width: 20vw;
+}
+
+#about {
+     margin-top: 5vh;
+     display: grid;
+     grid-template-columns: 70% 30%;
+}
+
+.profileimagegridbox {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.imagebg {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     width: 21vw;
+     height: 50vw;
+     -webkit-animation: rotate 5s infinite ease-in;
+     -moz-animation: rotate 5s infinite ease-in;
+     animation: rotate 5s infinite ease-in;
+}
+
+@keyframes rotate {
+     0% {
+          background: linear-gradient(to left, red, brown);
+     }
+
+     50% {
+          background: linear-gradient(to left, blue, green);
+     }
+
+     100% {
+          background: linear-gradient(to left, purple, red);
+     }
+}
+
+.abouttext {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.abouttext h2 {
+     margin-left: 5vw;
+}
+
+.abouttext p {
+     margin: 2vw 5vw;
+}
+
+.typing {
+     color: blueviolet;
+}
+
+.highlight {
+     color: purple;
+     font-size: large;
+}
+
+#skills {
+     background-color: snow;
+     border: 5px solid white;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 5vh;
+     border-radius: 20px;
+     box-shadow: 0 0 10px 5px gainsboro;
+     margin-top: 8vh;
+}
+
+.skillhead {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     color: purple;
+}
+
+.underline {
+     text-decoration: overline;
+}
+
+.skillbox {
+     margin: 2vw 5vw;
+}
+
+.listcontent {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.listing {
+     list-style: none;
+}
+
+.bar {
+     border-radius: 20px;
+     width: 80%;
+     background-color: gainsboro;
+     height: 15px;
+}
+
+.fillbar1 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand1 2s forwards;
+}
+
+.fillbar2 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand2 2s forwards;
+}
+
+.fillbar3 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand3 2s forwards;
+}
+
+.fillbar4 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand4 2s forwards;
+}
+
+.fillbar5 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand2 2s forwards;
+}
+
+.fillbar6 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand4 2s forwards;
+}
+
+.fillbar7 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand2 2s forwards;
+}
+
+.fillbar8 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand3 2s forwards;
+}
+
+.fillbar9 {
+     font-size: smaller;
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: blue;
+     border-radius: 20px;
+     height: 15px;
+     animation: expand4 2s forwards;
+}
+
+@keyframes expand1 {
+     0% {
+          width: 10%;
+     }
+
+     100% {
+          width: 90%;
+     }
+}
+
+@keyframes expand2 {
+     0% {
+          width: 10%;
+     }
+
+     100% {
+          width: 70%;
+     }
+}
+
+@keyframes expand3 {
+     0% {
+          width: 10%;
+     }
+
+     100% {
+          width: 80%;
+     }
+}
+
+@keyframes expand4 {
+     0% {
+          width: 10%;
+     }
+
+     100% {
+          width: 60%;
+     }
+}
+
+#projects{
+     width: 99vw;
+     height: 100vh;
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+
+#projects h2{
+     color: purple;
+     display: flex;
+     justify-content: center;
+}
+
+.projectbox{
+     margin: 5vh 3vw;
+     display: grid;
+     grid-template-columns: 32% 32% 32%;
+     column-gap: 20px;
+}
+
+.project{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: snow;
+     border-radius: 20px;
+     box-shadow: 5px 10px 10px 5px gray;
+     padding: 10px;
+}
+
+.projectimage1{
+     border-radius: 20px;
+     height: 18vw;
+}
+
+.projectimage2{
+     border-radius: 20px;
+     height: 21vw;
+}
+
+.projecttitle{
+     margin-top: 5%;
+     color: darkmagenta;
+     font-family: "Josefin Sans", sans-serif;
+}
+
+.description{
+     margin: 10px;
+     width: 100%;
+}
+
+.readmore{
+     border: 2px solid purple;
+     background-color: white;
+     padding: 5px;
+     border-radius: 20px;
+     color: purple;
+     font-weight: bold;
+     cursor: pointer;
+}
+
+.readmore:hover{
+     border: 2px double white;
+     background-color: purple;
+     color: white;
+}
+
+#resume{
+     margin-top: 20px;
+}
+
+#resume h2{
+     color: purple;
+     display: flex;
+     justify-content: center;
+}
+
+.resumecontent{
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 70% 25%;
+}
+
+.resumepic{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+}
+
+.resumephoto{
+     border: 1px solid black;
+     box-shadow: 0 10px 10px 5px gray;
+     height: 50vw;
+}
+
+.resumelink{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#contact h2{
+     margin-top: 40px;
+     color: purple;
+     display: flex;
+     justify-content: center;
+}
+
+.contactbody{
+     display: grid;
+     grid-template-columns: 60% 35%;
+     row-gap: 5vh;
+}
+
+.contacttext{
+     font-size: 1.7vw;
+     margin-left: 20vw;
+     font-family: "Kalam", cursive;
+     display: flex;
+     align-items: center;
+}
+
+.contactlines{
+     margin: 0 5vw;
+     font-family: "Josefin Sans", sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.contactcall{
+     width: 4vw;
+}
+
+#footer{
+     padding: 10px;
+     background-color: #1e272e;
+}
+
+.ftitle{
+     display: flex;
+     align-items: center;
+     height: 10vh;
+     font-family: "Monoton", sans-serif;
+     color: white;
+}
+
+.ftitle hr{
+     background-color: white;
+}
+
+.fbody{
+     display: grid;
+     grid-template-columns: 50% 49%;
+     row-gap: 2vh;
+}
+
+.fquote{
+     width: 100%;
+     grid-column: 1/span 2;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Poetsen One", sans-serif;
+}
+
+.fquote div{
+     width: 90%;
+}
+
+.fcontact{
+     margin-top: 2vh;
+     margin-left: 2vw;
+     display: flex;
+     align-items: flex-start;
+}
+
+.flinks{
+     margin-top: 2vh;
+     margin-left: 2vw;
+     display: flex;
+     align-items: flex-start;
+}
+
+.fcicon{
+     width: 30px;
+}
+
+.footer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 10vh;
+     grid-column: 1/span 2;
+     color: white;
+}
+
+@media screen and (max-width: 650px) {
+     .projectbox{
+          grid-template-columns: 99%;
+          row-gap: 5vh;
+     }
+
+     #about{
+          grid-template-columns: 99%;
+     }
+
+     .listcontent{
+          flex-direction: column;
+     }
+
+     .typing{
+          font-size: 5vw;
+     }
+
+     .navbar{
+          visibility: hidden;
+          position: absolute;
+     }
+
+     header h1{
+          font-size: 5vw;
+     }
+
+     .resumecontent{
+          grid-template-columns: 99%;
+          row-gap: 5vh;
+     }
+
+     .resumephoto{
+          width: 50vw;
+          height: auto;
+     }
+
+     .contactbtn{
+          width: 16vw;
+          font-size: 2.5vw;
+     }
+}
+
+@media screen and (min-width: 650px) {
+     .navbarphone{
+          visibility: hidden;
+          position: absolute;
+     }
+}

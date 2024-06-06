@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Assets/cv.png" type="image/x-icon">
+    <title>Personal Portfolio</title>
+    <!-- fonts links -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/Home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="name">
+            <h1>Saayan Samanta</h1>
+        </div>
+        <div class="navbar">
+            <button type="button" class="navbutton">
+                <a href="#about" class="link">About</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#skills" class="link">Skill</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#projects" class="link">Project</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#resume" class="link">Resume</a>
+            </button>
+
+            <button type="button" class="navbutton">
+                <a href="#contact" class="link">Contact</a>
+            </button>
+        </div>
+        <div class="navbarphone">
+            <button type="button" id="navbtn" class="menubutton" onclick={changepic()}>
+                <img src="/Assets/menuicon.png" alt="menuicon" class="menuicon">
+            </button>
+
+            <div id="navbtncontent" class="dropdowncontent hide">
+                <a href="#about" class="link dpnav" onclick={managepopup()}>About</a>
+                <a href="#skills" class="link dpnav" onclick={managepopup()}>Skill</a>
+                <a href="#projects" class="link dpnav" onclick={managepopup()}>Project</a>
+                <a href="#resume" class="link dpnav" onclick={managepopup()}>Resume</a>
+                <a href="#contact" class="link dpnav" onclick={managepopup()}>Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="abouttext" onload=typeWriter()>
+            <h2>
+                Hi, I'm <b id="demo" class="typing"></b>
+            </h2>
+            <p>
+                As a web developer, I have an experience of <b class="highlight">4 years</b>. I specialize in creating
+                dynamic and user-friendly
+                websites. I am proficient in <b class="highlight">HTML</b>, <b class="highlight">CSS</b>, <b
+                    class="highlight">JavaScript</b>, and have extensive experience with frameworks such as <b
+                    class="highlight">React</b> and <b class="highlight">Angular</b>, as well as back-end technologies
+                like <b class="highlight">Node.js</b> , <b class="highlight">Springboot</b> and <b
+                    class="highlight">SQL</b>. My portfolio includes a range of projects from small sites to complex web
+                applications. I am known for my strong problem-solving skills and my ability to work closely with
+                cross-functional teams to ensure that all aspects of the website align with client needs and industry
+                standards. Committed to both innovation and technologies in web development to provide optimal
+                solutions.
+            </p>
+        </div>
+
+        <div class="profileimagegridbox">
+            <div class="imagebg">
+                <img src="/Assets/myphoto1.jpg" alt="Profile Image" class="profile">
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="skillhead"><u class="underline">&emsp;Skills and Expertice&emsp;</u></h2>
+        <div class="skillbox">
+            <ul class="listing">
+                <li class="listcontent">
+                    <div class="listtitle">
+                        HTML and CSS
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar1">90%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        JavaScript
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar2">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        React
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar3">80%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Angular
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar9">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        UX / UI Design
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar4">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Java
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar5">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        Node.js
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar6">60%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        SpringBoot
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar7">70%</div>
+                    </div>
+                </li>
+
+                <br>
+                <br>
+
+                <li class="listcontent">
+                    <div class="listtitle">
+                        SQL
+                    </div>
+
+                    <div class="bar">
+                        <div class="fillbar8">80%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <br>
+        <hr>
+        <br>
+        <h2><u class="underline">&emsp;Projects and work samples&emsp;</u></h2>
+        <div class="projectbox">
+            <div class="project">
+                <img class="projectimage1" src="/Assets/Online-quiz-system.png" alt="Online Quiz System Image">
+                <h3 class="projecttitle">Online Quiz Management System</h3>
+                <div class="description">
+                    <p>An online system to manage quiz. Where a user with faculty role can add question and generate
+                        quiz and then the user with role can give test for quiz generated by the faculty and see his/her
+                        performance. There is users with admin role who can delete or add any user to the online system.
+                    </p>
+                </div>
+                <a href="./OnlineQuiz.html">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
+
+            <div class="project">
+                <img class="projectimage2" src="/Assets/slot machine.jpg" alt="Slot Machine Image">
+                <h3 class="projecttitle">Slot Machine Game</h3>
+                <div class="description">
+                    <p>
+                        A website that displays an interactive and vertual slot machine, which acts like a real one
+                        having screen scroll and whenever the three screen displays the same element then there is a
+                        jackpot. And when does not matches it show Not Matched.
+                    </p>
+                </div>
+                <a href="./SlotMachine.html">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
+
+            <div class="project">
+                <img class="projectimage1" src="/Assets/todo.jpg" alt="Todo list Image">
+                <h3 class="projecttitle">ToDo List Website</h3>
+                <div class="description">
+                    <p>
+                        A website that displays an interactive and vertual todo list page, where there is an area to
+                        write the todo items and an add button to add the item to the list. After that every item gets
+                        added with a delete icon to delete the item from the list.
+                    </p>
+                </div>
+                <a href="./ToDo.html">
+                    <button type="button" class="readmore">Read More</button>
+                </a>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2><u class="underline">&emsp;Resume&emsp;</u></h2>
+        <div class="resumecontent">
+            <div class="resumepic">
+                <img src="/Assets/Resumepic.png" alt="Resume" class="resumephoto">
+            </div>
+            <div class="resumelink">
+                <a href="/Assets/SaayanSamanta_InternshalaResume.pdf" download>
+                    <button type="button" class="readmore">Download Resume</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2><u class="underline">&emsp;Contact&emsp;</u></h2>
+        <br>
+        <p class="contactlines">
+            I’d love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free
+            to reach out.
+        </p>
+        <br>
+        <div class="contactbody">
+            <div class="contacttext">
+                <img src="/Assets/call.png" alt="phone" class="contactcall">
+                &emsp;
+                <h4>+91 6202586328</h4>
+            </div>
+            <div class="contactlink">
+                <a href="tel:+91 6202586328"><button type="button" class="readmore contactbtn">Call Me</button></a>
+            </div>
+            <div class="contacttext">
+                <img src="/Assets/gmail.png" alt="phone" class="contactcall">
+                &emsp;
+                <h4>saayansamanta2003@gmail.com</h4>
+            </div>
+            <div class="contactlink">
+                <a href="mailto:saayansamanta2003@gmail.com"><button type="button" class="readmore contactbtn">Mail
+                        Me</button></a>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="ftitle">
+            &emsp;&emsp;&emsp;Saayan Samanta
+        </div>
+        <hr>
+        <br>
+        <div class="fbody">
+            <div class="fquote">
+                <div>
+                    I'm a passionate Fullstack Developer, dedicated to creating innovative and efficient solutions.
+                    Let's
+                    connect and collaborate!
+                </div>
+            </div>
+            <div class="fcontact">
+                <a href="tel:+91 6202586328">
+                    <img src="/Assets/call.png" alt="phone" class="fcicon">
+                </a>
+                &emsp;
+                <a href="mailto:saayansamanta2003@gmail.com">
+                    <img src="/Assets/gmail.png" alt="phone" class="fcicon">
+                </a>
+            </div>
+            <div class="flinks">
+                <a href="https://github.com/SAAYAN-SAMANTA" target="_blank">
+                    <img src="/Assets/github bg.png" alt="links" class="icon">
+                </a>
+                &emsp;
+                <a href="https://www.linkedin.com/in/saayan-samanta-103788261/" target="_blank">
+                    <img src="/Assets/linkedin.png" alt="links" class="icon">
+                </a>
+            </div>
+            <div class="footer">
+                &emsp;&copy; 2024 Saayan Samanta. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="/Javascript/Home.js"></script>
+<script src="/Javascript/Homephone.js"></script>
+
+</html>
