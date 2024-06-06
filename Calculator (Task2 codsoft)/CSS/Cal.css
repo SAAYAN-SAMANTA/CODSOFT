@@ -1,5 +1,5 @@
 body{
-     height: 100vh;
+     height: 97vh;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -30,6 +30,7 @@ body{
 }
 
 .display{
+     overflow: hidden;
      border-top: 2px solid gray;
      border-left: 2px solid gray;
      font-family: "Black Ops One", system-ui;
