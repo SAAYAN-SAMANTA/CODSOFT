@@ -85,6 +85,10 @@
     border-bottom-left-radius: 50%;
 }
 
+h2{
+    font-size: 2.2vw;
+}
+
 .typing{
     padding: 0 5px;
     background: linear-gradient(to left, red, #5f27cd);
@@ -117,8 +121,8 @@ h2{
 }
 
 .intropara{
-    width: 70%;
-    font-size: 1vw;
+    width: 80%;
+    font-size: 1.2vw;
     font-weight: 500;
 }
 

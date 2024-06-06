@@ -272,6 +272,6 @@
     100%{
         left: 70%;
         background-color: rgba(255, 255, 255, 0.438);
-        transform: translateX(100%) skewX(30deg);;
+        transform: translateX(100%) skewX(30deg);
     }
 }

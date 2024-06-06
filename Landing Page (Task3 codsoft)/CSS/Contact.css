@@ -1,0 +1,249 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   position: relative;
+}
+
+.adjustcontainer {
+   margin: 0;
+   padding: 0;
+}
+
+.adjustrow {
+   width: 99vw;
+   margin: 0;
+   padding: 0;
+}
+
+.websitelogo {
+   width: 10vw;
+}
+
+.navigation {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button-box {
+   margin-top: 5vh;
+}
+
+.linkbutton {
+   font-family: "Roboto", sans-serif;
+   font-size: 1.2vw;
+   font-weight: bold;
+   margin-right: 5vw;
+   padding: 10px;
+   background-color: white;
+   border: none;
+   box-shadow: 0 0 5px 3px lightblue;
+   border-radius: 10px;
+}
+
+.linkbutton:hover {
+   border: none;
+   animation: shadow 0.6s forwards 1;
+   box-shadow: 0 10px 5px 3px #5f27cd;
+}
+
+@keyframes shadow {
+   0% {
+      border-radius: 10px;
+      box-shadow: 0 0 5px 3px lightblue;
+   }
+
+   100% {
+      border-radius: 20px;
+      box-shadow: 0 10px 5px 3px #5f27cd;
+   }
+}
+
+.body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 70vh;
+}
+
+.intro {
+   height: 70%;
+}
+
+.contactpara {
+   width: 80%;
+   height: 50%;
+}
+
+.conactintrotitle {
+   font-family: "Roboto", sans-serif;
+   font-size: 2vw;
+   font-weight: bold;
+}
+
+.contactintromessage {
+   margin-top: 5%;
+   font-family: "Roboto", sans-serif;
+   font-size: 1vw;
+   font-weight: bold;
+}
+
+.contactmailbox {
+   margin-top: 5%;
+   font-size: 1.1vw;
+   font-family: "Roboto", sans-serif;
+   font-weight: bolder;
+}
+
+.contactpage {
+   padding: 10px;
+   box-shadow: 5px 5px 10px 2px #ffcccc;
+}
+
+.iconcontactmail {
+   width: 2.5vw;
+}
+
+.mailbox {
+   display: flex;
+   flex-direction: column;
+}
+
+.mailingbox {
+   font-size: 1.3vw;
+}
+
+.contactmaillink {
+   text-decoration: none;
+   font-size: 1vw;
+   color: #5f27cd;
+}
+
+.sendmessagebox {
+   font-family: "Roboto", sans-serif;
+   display: flex;
+   flex-direction: column;
+   padding: 6%;
+   border-radius: 50px;
+   box-shadow: 0 0 10px 5px #cd84f1;
+   width: 80%;
+   height: 100%;
+}
+
+.sendmessagetitle {
+   font-size: 1.5vw;
+   font-weight: bold;
+}
+
+.field {
+   margin-top: 5%;
+}
+
+.contactmailfields {
+   font-size: 1vw;
+   background-color: #f8e4fe;
+   width: 100%;
+   border-radius: 5px;
+   padding: 5px;
+   border: 2px solid transparent;
+   outline: none;
+}
+
+.contactmailfields:focus {
+   border: 2px solid #cd84f1;
+}
+
+.messageboxmaillabel {
+   font-size: 1vw;
+   font-weight: bold;
+}
+
+.mailsendtextarea {
+   height: 170%;
+}
+
+.contactmessagesendbutton {
+   background-color: #be2edd;
+   color: white;
+   border-radius: 10px;
+   border: none;
+   padding: 10px;
+   margin-top: 10%;
+   box-shadow: 5px 10px 2px 1px #f8e4fe;
+}
+
+.contactmessagesendbutton:active {
+   box-shadow: none;
+   background-color: purple;
+}
+
+.animatingbigball {
+   border-radius: 50%;
+   right: 30px;
+   position: absolute;
+   background-color: #5f27cd;
+   width: 70px;
+   height: 70px;
+   animation: riseshadow 2s ease-in-out 1;
+}
+
+.animatingsmallball {
+   border-radius: 50%;
+   right: 10px;
+   bottom: 50px;
+   position: absolute;
+   background-color: #be2edd;
+   width: 20px;
+   height: 20px;
+   animation: rise 2s forwards 1;
+}
+
+@keyframes riseshadow {
+   0% {
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      box-shadow: 1px 2px 5px 1px grey;
+   }
+
+   25% {
+      width: 20px;
+      height: 20px;
+      box-shadow: 2px 3px 5px 1px grey;
+      bottom: 100px;
+   }
+
+   50% {
+      width: 40px;
+      height: 40px;
+      bottom: 200px;
+      box-shadow: 3px 3px 5px 1px grey;
+   }
+
+   75% {
+      width: 50px;
+      height: 50px;
+      bottom: 300px;
+      box-shadow: 3px 4px 5px 3px grey;
+   }
+
+   100% {
+      bottom: 480px;
+      width: 70px;
+      height: 70px;
+      box-shadow: none;
+   }
+
+}
+
+@keyframes rise {
+   0%{
+      background-color: transparent;
+      bottom: -50px;
+   }
+}

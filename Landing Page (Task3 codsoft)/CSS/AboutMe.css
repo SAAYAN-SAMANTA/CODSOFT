@@ -83,7 +83,7 @@
 
 .hrstyle{
     position: absolute;
-    border: 10px solid #be2edd;
+    border: 0.6vw solid #be2edd;
     border-radius: 20px;
     width: 20%;
     animation: animate 2s ease-out 1;
@@ -91,17 +91,17 @@
 
 @keyframes animate {
     0%{
-        border: 5px solid #5f27cd;
+        border: 0.2vw solid #5f27cd;
         width:  80%;
     }
 
     60%{
-        border: 15px solid red;
+        border: 1vw solid red;
         width:  2%;
     }
 
     100%{
-        border: 10px solid #be2edd;
+        border: 0.6vw solid #be2edd;
         width: 20%;
     }
 }
